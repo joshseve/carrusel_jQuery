@@ -1,49 +1,33 @@
-// Solo se ocupa o el signo $ o la palabra jQuery
-// $(document).ready(function(){
+// Para que se ejecute jQuery hasta que cargue la pagina
+$(document).ready(function(){
 
-// jQuery(document).ready(function(){
-//   alert("Alerta de prueba");
-// });
-
-// Diferencias entre JS y JQ
-
-// JS normalmente...
-// function saludar(){
-//   document.getElementById("saludar").innerHTML="Hola";
-// }
-
-// JQ...
-// $(document).ready(function(){
-//     $("button").click(function(){
-//         $("#saludos").append("Saludando con jQuery");
-//     });
-// });
-
-// JS normalmente...
-// function agregarLista(){
-//   var node=document.createElement("li");
-//   var textnode=document.createTextNode("mas comida");
-//   node.appendChild(textnode);
-//   document.getElementById("lista").appendChild(node);
-// }
-
-// // JQ...
-// $(document).ready(function(){
-//     $("button").click(function(){
-//         $("ul").append("<li>Más comida con jQuery</li>");
-//     });
-// });
+  $("img").hide();
+  $("#slide1").show();
 
 
-// // JS normalmente...
-// // function cambiarColor(){
-// //   document.getElementById("resaltar").style.color="red";
-// // }
+  $(".dot1").click(function(){
+    $("img").hide();
+    $("#slide1").show();
+  });
 
-// // JQ... No funciono!!! revisar!!!
-// $(document).ready(function(){
-//     $("#cambiarColor").click(function(){
-//       $("#resaltar").css("color", "red");
-//       $("#resaltar").css("background", "blue");
-//     });
-// });
+  $(".dot2").click(function(){
+    $("img").hide();
+    $("#slide2").show();
+  });
+
+  $(".dot3").click(function(){
+    $("img").hide();
+    $("#slide3").show();
+  });
+
+  $(".dot4").click(function(){
+    $("img").hide();
+    $("#slide4").show();
+  });
+
+  $(".dot5").click(function(){
+    $("img").hide();
+    $("#slide5").show();
+  });
+
+});
