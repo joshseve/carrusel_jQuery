@@ -31,3 +31,10 @@ $(document).ready(function(){
   });
 
 });
+
+// $(function(){
+//     setInterval(function(){
+//         $("#orquideas .slides").animate({"margin-left": "-=700px"},1000);
+//     }, 3000);
+//
+// });
